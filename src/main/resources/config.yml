@@ -10,24 +10,41 @@
 # Requires PlaceholderAPI installed: https://www.spigotmc.org/resources/placeholderapi.6245/
 # To see the available variables: https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders
 
+#  motd-message:
+#  - "&7&m▶----------------------------◀"
+#  - "&d        &8[&6✦&8] &dExample Server &8[&6✦&8]"
+#  - "&f         Welcome back &b%player_name%"
+#  - ""
+#  - "&e            www.example.com"
+#  - "&7&m▶----------------------------◀"
+
+
+
 # Join and Quit config.
 config:
   enable-join-message: true #Set this to false for disable the message.
-  join-message: "&7[&a+&7] &bPlayer &d%player_name% &bhas joined the server."
+  join-message:
+    - "&7[&a+&7] &bPlayer &d%player_name% &bhas joined the server."
+    - "Hallöchen,\ndu Amöbe!"
+    - "Schmöchen,\ndu Amöbe!"
+    - "Wow hellau,\ndu Amöbe!"
   enable-quit-message: true #Set this to false for disable the message.
-  quit-message: "&7[&c-&7] &bPlayer &d%player_name% &bhas left the server."
+  quit-message:
+    - "&7[&c-&7] &bPlayer &d%player_name% &bhas left the server."
+    - "Tschau,\ndu Amöbe!"
+    - "Bye,\ndu Amöbe!"
+    - "Say goodby,\ndu Amöbe!"
   enable-first-join-message: true #Set this to false for disable the message.
-  first-join-message: "&7[&a+&7] &bPlayer &d%player_name% &bis new on the server. &7(&8#%player_count%&7)"
 
 # MOTD config.
 motd:
   enable-motd-message: true #Set this to false for disable the message.
   motd-message:
-  - "&7&m▶----------------------------◀"
-  - "&d        &8[&6✦&8] &dExample Server &8[&6✦&8]"
-  - "&f         Welcome back &b%player_name%"
-  - ""
-  - "&e            www.example.com"
-  - "&7&m▶----------------------------◀"
+    - "&7&m▶----------------------------◀"
+    - "&d        &8[&6✦&8] &dExample Server &8[&6✦&8]"
+    - "&f         Welcome back &b%player_name%"
+    - ""
+    - "&e            www.example.com"
+    - "&7&m▶----------------------------◀"
 
 player-count: 0 # It is recommended not to touch this parameter.

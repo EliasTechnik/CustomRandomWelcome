@@ -3,6 +3,7 @@ package beeted.customwelcome;
 import beeted.commands.Commands;
 import beeted.commands.PrincipalCommand;
 import beeted.events.PlayerJoinQuit;
+import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.plugin.PluginManager;
@@ -22,6 +23,7 @@ public final class CustomWelcome extends JavaPlugin {
              * Since all events are in the main class (this class), we simply use "this"
              */
             console.sendMessage("[CustomWelcome] Found PlaceholderAPI installed.");
+            Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"/papi ecloud download Player");
         } else {
             /*
              * We inform about the fact that PlaceholderAPI isn't installed and then
