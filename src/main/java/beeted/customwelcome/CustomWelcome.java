@@ -23,7 +23,7 @@ public final class CustomWelcome extends JavaPlugin {
              * Since all events are in the main class (this class), we simply use "this"
              */
             console.sendMessage("[CustomWelcome] Found PlaceholderAPI installed.");
-            Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"/papi ecloud download Player");
+            Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"papi ecloud download Player");
         } else {
             /*
              * We inform about the fact that PlaceholderAPI isn't installed and then
